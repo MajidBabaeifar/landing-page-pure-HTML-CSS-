@@ -233,10 +233,8 @@ video {
     bottom: 0;
     width: 120px;
     height: 120px;
-    padding: 5px;
     background-color: white;
-    text-align: center;
-    padding: 30px;
+    align-items: center;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -259,6 +257,29 @@ video {
     -o-transform: rotate(-45deg);
 }
 
+.vid-sec ul li .inside {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.vid-sec ul li .inside:hover {
+    transform: rotate(+45deg);
+    -webkit-transform: rotate(+45deg);
+    -moz-transform: rotate(+45deg);
+    -ms-transform: rotate(+45deg);
+    -o-transform: rotate(+45deg);
+}
+
 @media(max-width:700px) {
     .vid-sec ul {
         overflow-x: scroll;
@@ -266,6 +287,8 @@ video {
         white-space: nowrap;
         left: 0;
         width: 400px;
+        height: 100px;
+        padding: 50px 0px;
         transform: none;
         -webkit-transform: none;
         -moz-transform: none;
@@ -274,13 +297,16 @@ video {
     }
     .vid-sec ul li {
         display: inline-block;
-        margin: 15px;
-        width: 100px;
-        height: 100px;
-        transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
+        width: 50px;
+        height: 50px;
+    }
+    .vid-sec ul li .inside {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
 }
