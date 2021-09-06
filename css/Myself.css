@@ -341,14 +341,20 @@ video {
 /* about section */
 
 .about {
-    width: 100%;
-    height: 100vh;
+    width: 95vw;
+    height: 92vh;
+    right: 50%;
+    transform: translateX(50%);
     overflow: hidden;
     position: relative;
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
 }
 
 .verticalFlex {
-    width: 100vw;
+    width: 95vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -356,19 +362,24 @@ video {
 }
 
 .horizontalFlex {
-    margin: 50px;
-    width: 100px;
-    height: 50vh;
+    width: 95vw;
+    height: 46vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .box {
-    margin: 5px;
     width: 300px;
     height: 300px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+    background-color: grey;
+}
+
+.box img {
+    width: 40px;
+    height: 40px;
 }
