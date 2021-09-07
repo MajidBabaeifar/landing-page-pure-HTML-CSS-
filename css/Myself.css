@@ -47,6 +47,10 @@ nav img {
     height: 30px;
 }
 
+nav h1 {
+    font-size: 22px;
+}
+
 nav .fas {
     font-size: 22px;
     transform: scaleX(-1);
