@@ -505,9 +505,11 @@ footer .logos img {
     z-index: 250;
 }
 
+
+/* 
 .hero-btn:hover {
     right: 0;
-}
+} */
 
 .contact-p {
     width: 75vw;
